@@ -1,0 +1,13 @@
+pkcs11-dump -- PKCS#11 token dump.
+
+Copyright (c) 2006 Alon Bar-Lev <alon.barlev@gmail.com>
+
+ABOUT
+	A small utility to dump PKCS#11 token contents.
+	Intended for debugging.
+
+AUTHORS
+	Alon Bar-Lev <alon.barlev@gmail.com>
+
+SUPPORT
+	http://www.opensc-project.org

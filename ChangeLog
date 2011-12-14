@@ -1,0 +1,29 @@
+pkcs11-dump
+Copyright (c) 2005-2008 Alon Bar-Lev <alon.barlev@gmail.com>
+
+$Id: $
+
+2010-01-10 -- Version 0.3.4
+
+ * Support large slot numbers, thanks to Martin Paljak.
+ * Perform GetSlotList() before accessing slot, workaround some PKCS#11
+   implementations, thanks to Martin Paljak.
+
+2008-08-05 -- Version 0.3.3
+
+ * gcc-4.3 update, thanks to Max Vozeler.
+
+2008-06-01 -- Version 0.3.2
+
+ * License cleanups.
+
+2008-05-31 -- Version 0.3.1
+
+ * Some minor build fixups.
+ * Added man page, thanks to Max Vozeler.
+ * Fix OpenSSL license issue.
+
+2006-12-02 -- Version 0.3
+
+ * Autoconf package.
+

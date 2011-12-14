@@ -1,0 +1,48 @@
+
+pkcs11-dump License
+
+	Copyright (c) 2005-2006 Alon Bar-Lev <alon.barlev@gmail.com>
+	All rights reserved.
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License version 2
+	as published by the Free Software Foundation.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program (see the file COPYING.GPL included with this
+	distribution); if not, write to the Free Software Foundation, Inc.,
+	51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+	Special exception for linking with OpenSSL:
+
+	In addition, as a special exception, the author gives
+	permission to link the code of this program with the OpenSSL
+	library (or with modified versions of OpenSSL that use the same
+	license as OpenSSL), and distribute linked combinations including
+	the two.  You must obey the GNU General Public License in all
+	respects for all of the code used other than OpenSSL.  If you modify
+	this file, you may extend this exception to your version of the
+	file, but you are not obligated to do so.  If you do not wish to
+	do so, delete this exception statement from your version.
+
+m4 Macros License
+
+	autoconf/automake
+		Copyright (C) 2002, 2003 Free Software Foundation, Inc.
+
+	pkg.m4
+		Copyright © 2004 Scott James Remnant <scott@netsplit.com>.
+
+OpenSSL License
+
+	This product includes software developed by the OpenSSL Project
+	for use in the OpenSSL Toolkit (http://www.OpenSSL.org/)
+
+	This product includes cryptographic software written by Eric Young
+	(eay@cryptsoft.com).  This product includes software written by Tim
+	Hudson (tjh@cryptsoft.com).

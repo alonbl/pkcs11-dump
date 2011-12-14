@@ -1,0 +1,38 @@
+/* This file is processed by configure to create versioninfo.rc */
+/* Every component changes @@FILE_DESCRIPTION@@ to local string */
+
+#include <afxres.h>
+
+VS_VERSION_INFO VERSIONINFO
+	FILEVERSION @PKCS11_DUMP_VERSION_MAJOR@,@PKCS11_DUMP_VERSION_MINOR@,@PKCS11_DUMP_VERSION_FIX@,0
+	PRODUCTVERSION @PKCS11_DUMP_VERSION_MAJOR@,@PKCS11_DUMP_VERSION_MINOR@,@PKCS11_DUMP_VERSION_FIX@,0
+	FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+	FILEFLAGS 0x21L
+#else
+	FILEFLAGS 0x20L
+#endif
+	FILEOS 0x40004L
+	FILETYPE 0x1L
+	FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904b0"
+		BEGIN
+			VALUE "Comments", "Provided under the terms of the GNU General Public License (GPLv2.1+).\0"
+			VALUE "CompanyName", "Alon Bar-Lev\0"
+			VALUE "FileDescription", "Dump PKCS#11 contents\0"
+			VALUE "FileVersion", "@PKCS11_DUMP_VERSION_MAJOR@.@PKCS11_DUMP_VERSION_MINOR@.@PKCS11_DUMP_VERSION_FIX@.0\0"
+			VALUE "InternalName", "@PACKAGE_NAME@\0"
+			VALUE "LegalCopyright", "Copyright © 2005-2008 Alon Bar-Lev <alon.barlev@gmail.com>\0"
+			VALUE "LegalTrademarks", "\0"
+			VALUE "OriginalFilename", "@PACKAGE_NAME@.exe\0"
+			VALUE "PrivateBuild", "\0"
+			VALUE "ProductName", "@PACKAGE_NAME@\0"
+			VALUE "ProductVersion", "@PKCS11_DUMP_VERSION_MAJOR@,@PKCS11_DUMP_VERSION_MINOR@,@PKCS11_DUMP_VERSION_FIX@,0\0"
+			VALUE "SpecialBuild", "\0"
+		END
+	END
+END
+

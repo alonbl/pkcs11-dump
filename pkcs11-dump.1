@@ -1,0 +1,65 @@
+.TH PKCS11-DUMP 1 "2008-05-30"
+.SH NAME
+pkcs11-dump \- dump PKCS#11 token content
+.
+.SH SYNOPSIS
+.
+.B pkcs11-dump
+info
+.I /path/to/pkcs11.so
+.br
+.B pkcs11-dump
+slotlist
+.I /path/to/pkcs11.so
+.br
+.B pkcs11-dump
+dump
+.I /path/to/pkcs11.so slotnum userpin|-
+.br
+.
+.SH DESCRIPTION
+.B pkcs11-dump
+is a program to query PKCS#11 provider modules for objects available
+on a specific crypto device. 
+.B pkcs11-dump
+then dumps those objects to stdout in a human-readable format.
+.PP
+.B pkcs11-dump
+knows about PKCS#11 object types and attributes specified in PKCS#11
+versions up to and including v2.20.
+.PP
+These object types are supported
+.IP \(bu 4 
+CKO_DATA
+.IP \(bu 4 
+CKO_CERTIFICATE
+.IP \(bu 4 
+CKO_PUBLIC_KEY
+.IP \(bu 4 
+CKO_PRIVATE_KEY
+.IP \(bu 4 
+CKO_SECRET_KEY
+.IP \(bu 4 
+CKO_HW_FEATURE
+.IP \(bu 4 
+CKO_DOMAIN_PARAMETERS
+.IP \(bu 4 
+CKO_MECHANISM
+.IP \(bu 4 
+CKO_VENDOR_DEFINED
+.
+.SH SEE ALSO
+.BR pkcs11-data (1)
+.br
+.SH AUTHOR
+pkcs11-dump was written by Alon Bar-Lev <alon.barlev@gmail.com>.
+.PP
+The pkcs11-dump project homepage is at 
+.nf
+.nh
+.B http://alon.barlev.googlepages.com/pkcs11-utilities
+.hy
+.fi
+.PP
+This manual page was written by Max Vozeler <xam@debian.org>,
+for the Debian project (but may be used by others).
