@@ -1138,7 +1138,7 @@ Dump (
 		for (int j=0;attrdescAttributes[j].nId!=-1;j++) {
 			char Buffer[10*1024];
 			CK_ATTRIBUTE t[] = {
-				{attrdescAttributes[j].nId, Buffer, sizeof (Buffer)}
+				{(CK_ATTRIBUTE_TYPE)attrdescAttributes[j].nId, Buffer, sizeof (Buffer)}
 			};
 
 			if (
