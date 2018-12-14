@@ -24,7 +24,7 @@ define([PACKAGE_VERSION_MINOR], [3])
 define([PACKAGE_VERSION_FIX], [4])
 
 AC_INIT([pkcs11-dump], [PACKAGE_VERSION_MAJOR.PACKAGE_VERSION_MINOR.PACKAGE_VERSION_FIX])
-AM_INIT_AUTOMAKE([pkcs11-dump], [${PACKAGE_VERSION}])
+AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER([config.h])
 AC_CONFIG_SRCDIR([pkcs11-dump.cpp])
 AC_CONFIG_MACRO_DIR([m4])
@@ -82,9 +82,12 @@ dnl Add libtool support.
 ifdef(
 	[LT_INIT],
 	[
-		LT_INIT
+		LT_INIT([win32-dll])
+		LT_LANG([Windows Resource])
 	],
 	[
+		AC_LIBTOOL_WIN32_DLL
+		AC_LIBTOOL_RC
 		AC_PROG_LIBTOOL
 	]
 )
