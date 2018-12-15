@@ -17,9 +17,14 @@
  * 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-//#include "config.h"
-#define PACKAGE "alon"
-#define PACKAGE_VERSION "1.2"
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+#ifndef PACKAGE_NAME
+#define PACKAGE_NAME "pkcs11-dump"
+#define PACKAGE_VERSION "unknown"
+#endif
 
 #if defined(_WIN32)
 #include <windows.h>
@@ -1269,7 +1274,7 @@ main (
 			"There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 			"\n"
 		),
-		PACKAGE,
+		PACKAGE_NAME,
 		PACKAGE_VERSION
 	);
 
